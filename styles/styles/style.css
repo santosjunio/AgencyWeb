@@ -1,0 +1,53 @@
+@import url(../global.css); 
+
+/* DISPAY FLEX PARA QUE O GRUPO FIQUE AO LADO DO OUTRO */
+/* JUSTIFY-CONTENT COLOCAR NAS EXTREMIDADES */
+/* PADDING ESPAÇAMENTO INTERNO */
+/* ALING-ITEMS CETRALIZA NA VERTICAL */
+/* BORDER-BOTTOM É A BORDA INFERIOR */
+header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 0.7px solid var(--color-gray-3);
+}
+
+/* GAP É A DISTANCIA ENTRE OS ELEMENTOS */
+
+.container-nav-header{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* A TAG ABAIXO SO VAI ESTILIZAR AS TAGS UL QUE ESTIVEREM DENTRO DE NAVEGATION-HEADER */
+/* LIST-STYLE NONE TIRA AS BOLINHAS */
+.navigation-header ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+/* TEXT-DECORATION TIRA O UNDERLINE */
+/* FONTE-FAMILY É A FAMILI DA FONTE */
+.navigation-header ul li a{
+    text-decoration: none;
+    color: var( --color-black); 
+    font-family: var(--font-primary);
+}
+
+.navigation-header ul li .menu-active{
+    color: var(--color-blue);
+}
+
+.btn-header{
+    font-family: var(--font-primary);
+    text-decoration: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: var(--fonte-weight-button);
+}
