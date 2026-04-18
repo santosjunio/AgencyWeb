@@ -51,3 +51,77 @@ header{
     padding: 10px 20px;
     font-weight: var(--fonte-weight-button);
 }
+
+/* MAIN */
+/* DISPLAY FLEX SERVE PARA DEIXAR OS ELEMENTOS AO LAOO  DO OUTRO */
+/* JUSTIFY CONTENT DEIXA TUDO CENTRALIZADO NA HORIZONTAL */
+/* ALIGN ITEMS DEIXA TUDO CENTRALIZADO NA VERTICAL */
+/* GAP É A DISTANCIA ENTRE OS ELEMENTOS */
+/* BACKGROUND COLOR É A COR DE FUNDO */
+/* PADDING É O ESPAÇAMENTO INTERNO */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--color-blue-10);
+    padding: 50px 0;
+}
+
+/* DISPLAY FLEX PÁRA HABILITAR O GAP */
+/* FLEX DIRECTION COLUMN SERVE PARA DEIXAR EM COLUNAS */
+/* GAP É PARA A DISTANCIA ENTRE OS ELEMENTOS */
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 520px;
+}
+
+.main-content h1{
+    font-size: var(--fonte-size-h1);
+    font-family: var(--font-primary);
+    font-weight: var(--fonte-weight-h1);
+}
+
+.main-content h1 span{
+    color: var(--color-blue);
+}
+
+.main-content p{
+    font-family: var(--font-primary);
+    color: var(--color-gray);
+    line-height: 30px;
+}
+
+.Container-cta{
+    display: flex;
+    gap: 10px;
+}
+
+/* PADDING É O ESPAÇAMENTO INTERNO */
+/* BORDER RADIUS É O ARREDONDAMENTO DA BORDA */
+/* FONT WEIGHT É A ESPESSURA DA FONTE */
+/* TEXT DECORATION É A DECORAÇÃO DO TEXTO */
+/* FONT FAMILY É A FAMILIA DA FONTE */
+.btn-primary, .btn-secondary{
+    padding: 8px 55px;
+    border-radius: 10px;
+    font-weight: var(--fonte-weight-button);
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+/* BAGROUND COLOR É A COR DE FUNDO */
+/* COLOR COR DE TEXTO */
+.btn-primary{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.btn-secondary{
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+}
+
