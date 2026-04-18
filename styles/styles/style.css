@@ -112,11 +112,21 @@ main{
     font-family: var(--font-primary);
 }
 
+.btn-primary:hover{
+    background-color: #005e89;
+}
+
 /* BAGROUND COLOR É A COR DE FUNDO */
 /* COLOR COR DE TEXTO */
 .btn-primary{
     background-color: var(--color-blue);
     color: var(--color-white);
+    transition: 2s;
+}
+
+.btn-secondary:hover{
+    background-color: #c5c5c5;
+    transition: 2s;
 }
 
 .btn-secondary{
@@ -124,4 +134,3 @@ main{
     color: var(--color-blue);
     border: 1px solid var(--color-blue);
 }
-
