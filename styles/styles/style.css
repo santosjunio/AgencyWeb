@@ -14,6 +14,7 @@ header{
 }
 
 /* GAP É A DISTANCIA ENTRE OS ELEMENTOS */
+/* GAP SÓ PODE SER USADO QUANDO TIVER DISPLAY FLEX */
 
 .container-nav-header{
     display: flex;
@@ -163,3 +164,85 @@ main{
     color: var(--color-gray);
     font-size: var( --fonte-size-cap);
 }
+
+
+/* SECTION DETAILS */
+/* align-items cuida da horizontal */
+.section-details{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.details-apresentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+   
+}
+
+.details-apresentation h2{
+    font-size: var(--fonte-size-h2);
+    font-family: var(--font-primary);
+    font-weight: var(--fonte-weight-h2);
+}
+
+.details-apresentation p{
+    font-family: var(--font-primary);
+    font-size: var(--font-body);
+    color: var(--color-gray-2);
+    width: 665px;
+    margin: 0 auto;
+}
+
+.service-description{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.content-service{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.service-details{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.service-details div span{
+    font-size: var(--fonte-size-h4);
+    font-weight: var(--fonte-weight-h4);
+    font-family: var(--font-primary);
+}
+
+.service-details div p{
+    font-size: var(--fonte-size-cap);
+    font-family: var(--font-primary);
+    color: var(--color-gray-2);
+}
+
+.content-service h3{
+    font-size: var(--fonte-size-h3);
+    font-family: var(--font-primary);
+    font-weight: var( --fonte-weight-h3);
+    width: 420px;
+}
+
+.content-service h3 span{
+    color: var(--color-blue);
+}
+
+.content-service{
+    color: var(--color-gray);
+    font-family: var(--font-primary);
+    line-height: 27px;
+    width: 450px;
+}
+
