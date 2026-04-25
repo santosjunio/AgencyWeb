@@ -31,7 +31,7 @@ header{
 }
 
 /* TEXT-DECORATION TIRA O UNDERLINE */
-/* FONTE-FAMILY É A FAMILI DA FONTE */
+/* FONTE-FAMILY É A FAMILIA DA FONTE */
 .navigation-header ul li a{
     text-decoration: none;
     color: var( --color-black); 
@@ -133,4 +133,33 @@ main{
     background-color: var(--color-white);
     color: var(--color-blue);
     border: 1px solid var(--color-blue);
+}
+
+
+/* -------- SERVICES ----------- */
+.section-services{
+    display: grid;
+    grid-template-columns: repeat(4,max-content);
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0px;
+    border-bottom: 1px solid var(--color-gray-3);
+}
+
+.container-item-service{
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.container-item-service h2{
+    font-family: var(--font-primary);
+    font-weight: var(--fonte-weight-h4);
+    font-size: var(--fonte-size-h4);
+}
+
+.container-item-service p{
+    font-family: var(--font-primary);
+    color: var(--color-gray);
+    font-size: var( --fonte-size-cap);
 }
