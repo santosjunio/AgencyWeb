@@ -333,3 +333,45 @@ main{
     display: flex;
     gap: 80px;
 }
+
+
+/* SECTION CONTACT */
+.section-contact{
+    background-color: var(--color-blue-10);
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    padding: 140px;
+}
+
+.section-contact h2{
+    font-size: var(--fonte-size-h2);
+    font-weight: var(--fonte-weight-h2);
+    width: 478px;
+    font-family: var(--font-primary);
+    text-align: center;
+}
+
+.section-contact forms {
+    display: flex;
+    gap: 14px;
+}
+
+.section-contact forms input{
+    padding: 20px 35px;
+    border-radius: 10px;
+    width: 532px;
+    font-family: var(--font-primary);
+    box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.07);
+}
+
+.section-contact forms button{
+    background-color: var(--color-black);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: var(--color-white);
+    font-family: var(--font-primary);
+    transform: uppercase;
+    font-weight: var(--fonte-weight-button);
+}
