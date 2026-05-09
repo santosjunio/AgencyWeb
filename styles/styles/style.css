@@ -14,6 +14,7 @@ header{
 }
 
 /* GAP É A DISTANCIA ENTRE OS ELEMENTOS */
+/* GAP SÓ PODE SER USADO QUANDO TIVER DISPLAY FLEX */
 
 .container-nav-header{
     display: flex;
@@ -162,4 +163,152 @@ main{
     font-family: var(--font-primary);
     color: var(--color-gray);
     font-size: var( --fonte-size-cap);
+}
+
+
+/* SECTION DETAILS */
+/* align-items cuida da horizontal */
+.section-details{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.details-apresentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+   
+}
+
+.details-apresentation h2{
+    font-size: var(--fonte-size-h2);
+    font-family: var(--font-primary);
+    font-weight: var(--fonte-weight-h2);
+}
+
+.details-apresentation p{
+    font-family: var(--font-primary);
+    font-size: var(--font-body);
+    color: var(--color-gray-2);
+    width: 665px;
+    margin: 0 auto;
+}
+
+.service-description{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.content-service{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.service-details{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.service-details div span{
+    font-size: var(--fonte-size-h4);
+    font-weight: var(--fonte-weight-h4);
+    font-family: var(--font-primary);
+}
+
+.service-details div p{
+    font-size: var(--fonte-size-cap);
+    font-family: var(--font-primary);
+    color: var(--color-gray-2);
+}
+
+.content-service h3{
+    font-size: var(--fonte-size-h3);
+    font-family: var(--font-primary);
+    font-weight: var( --fonte-weight-h3);
+    width: 420px;
+}
+
+.content-service h3 span{
+    color: var(--color-blue);
+}
+
+.content-service{
+    color: var(--color-gray);
+    font-family: var(--font-primary);
+    line-height: 27px;
+    width: 450px;
+}
+
+/* SECTION BENEFIT */
+.section-benefit{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-benefit{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    padding: 60px 48px;
+    border-radius: 20px;
+}
+
+.card-benefit p{
+    width: 458px;
+}
+
+.card-benefit-secondary{
+    background-color: #f4f4f4;
+}
+
+.card-benefit h2{
+    font-family: var(--font-primary);
+    font-size: var(--fonte-size-h3);
+    width: 365px;
+    text-align: center;
+}
+
+.card-benefit p{
+    font-family: var(--font-primary);
+    color: var(--color-gray);
+    text-align: center;
+    width: 458px;
+}
+
+.btn-benefit{
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-weight: var(--fonte-weight-button);
+}
+
+.card-benefit-primary{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.card-benefit-primary p{
+    color: var(--color-white);
+}
+
+.btn-benefit-secondary{
+    background-color: var(--color-white);
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: var(--color-blue);
+    text-decoration: none;
+    font-weight: var(--fonte-weight-button);
+    font-family: var(--font-primary);
 }
