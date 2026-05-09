@@ -312,3 +312,24 @@ main{
     font-weight: var(--fonte-weight-button);
     font-family: var(--font-primary);
 }
+
+/* SECTION COMPANY */
+.section-company{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 43px;
+    padding: 80px 0;
+}
+
+.section-company h2{
+    font-family: var(--font-primary);
+    font-size: var(--fonte-size-h3);
+    font-weight: var(--fonte-weight-h2);
+}
+
+.container-company{
+    display: flex;
+    gap: 80px;
+}
