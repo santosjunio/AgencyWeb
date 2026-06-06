@@ -204,6 +204,10 @@ main{
     gap: 60px;
 }
 
+.service-description-reverse{
+    flex-direction: row-reverse;
+}
+
 .content-service{
     display: flex;
     gap: 40px;
@@ -433,4 +437,114 @@ footer{
 .social-item:hover{
     background-color: var(--color-blue-10);
     transform: translateY(-10px);
+}
+
+
+/* Responsividade Tablet */
+@media(max-width: 884px){
+    main{
+        flex-direction: column-reverse;
+    }
+
+
+    main img{
+        width: 400px;
+    }
+
+
+    .main-content{
+        text-align: center;
+    }
+
+
+
+    .Container-cta{
+        justify-content: center;
+    }
+
+
+    .section-services{
+        grid-template-columns: repeat(2, max-content);
+        gap: 50px 90px;
+    }
+
+
+    .details-apresentation h2{
+        width: 480px;
+        margin: 0 auto;
+    }
+
+
+    .details-apresentation p{
+        width: 450px;
+    }
+
+
+    .service-description{
+        flex-direction: column;
+    }
+
+    .section-benefit{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-company{
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+}
+
+/* Responsividade Mobile */
+@media(max-width: 480px){
+    .container-nav-header{
+     display: none;   
+    }
+
+    main img{
+        width: 280px;
+    }
+
+    .main-content h1{
+        font-size: var(--fonte-size-h2);
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .main-content p{
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .section-services{
+        grid-template-columns: max-content;
+    }
+
+    .details-apresentation h2{
+        width: 360px;
+        font-size: var(--fonte-size-h2);
+    }
+    
+    .details-apresentation p{
+        width: 360px;
+    }
+
+    .service-description{
+        width: 300px;
+    }
+
+    .card-benefit p{
+        width: 300px;
+    }
+
+    .section-contact forms input{
+        width: 300px;
+    }
 }
